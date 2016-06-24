@@ -1,7 +1,6 @@
 body {
     color: #333;
     font-family: 'Oxygen', sans-serif;
-    /*    background:url(../images/) right no-repeat fixed #fff; -webkit-font-smoothing:antialiased;*/
 }
 a {
     color: #00a9c6;
@@ -10,10 +9,7 @@ a {
 a:hover {
     color: #666;
 }
-.btn,
-a,
-.btn:hover,
-a:hover {
+.btn, a, .btn:hover, a:hover {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
@@ -21,10 +17,7 @@ a:hover {
     transition: all 0.3s ease-in-out;
     outline: none !important;
 }
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
     margin: 0;
     line-height: 1em;
 }
@@ -49,54 +42,104 @@ h4 {
 h4 i {
     margin-right: 0.5em;
 }
+
+/*paragraaf styles*/
 p {
     font-size: 1em;
     line-height: 1.7em;
     margin-bottom: 1.7em;
 }
+
+.pBottom {
+    margin-bottom: 2em;
+}
+
+.pColor{
+    color: #00a9c6;
+}
+.pSpace {
+    margin-top: -3em;
+}
+
+.pSpaceBig {
+    margin-top: 5em;
+}
+
+/*carousel img style*/
+#carousel .item{
+  margin: 3px;
+}
+#carousel .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/*Logo Navbar*/
+.logo {
+    position: absolute;
+    left: 4em;
+}
+
+h1.logoMobiel {
+    display: none;
+}
+
+h1.logoScherm {
+    font-size: 24px;
+    margin-left: 4px;
+    color: #fff;
+    margin-bottom: -22px;   
+}
+
+h1.logoScherm2 {
+    font-size: 41px;
+    color: #fff;
+    margin-bottom: -1em;
+}
+
+.botLine {
+    border: 1px solid white;
+    border-left: 1em;
+    border-right: 1em;
+    border-top: 1em;
+}
+
 .spacer {
     padding: 6em 0;
 }
 
+.top {
+    padding-top: 1em;
+}
+
+.img-thumb{
+    margin-top: 1em;
+    max-width: 100%;
+    height: auto;
+    padding: 4px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    }    
+    
 .img-center{
     text-align: center;
     width: 100%;
 }
 
-/*begin slider*/
-
-.fotoSlides {
-    position: relative;
-    list-style: none;
-    overflow: hidden;
-    width: 100%;
-    padding: 0;
-    margin: 0;
+/*hr styles*/
+.hrContact {
+    margin-top: -1.8em;
+    width: 70%;
+    margin-left: 1px;
+    color: #96CDCD;
 }
-
-.fotoSlides li {
-  -webkit-backface-visibility: hidden;
-  position: absolute;
-  display: none;
-  width: 100%;
-  left: 0;
-  top: 0;
+.hrLinks {
+    margin-top: -1.8em;
+    color: #96CDCD;
 }
-
-.fotoSlides li:first-child {
-  position: relative;
-  display: block;
-  float: left;
-  }
-
-.fotoSlides img {
-  display: block;
-  height: auto;
-  float: left;
-  width: 100%;
-  border: 0;
-  }
-/*einde slider*/
 
 .topbar {
     background: url(../images/line.png);
@@ -118,7 +161,7 @@ p {
     top: 5px;
 }
 .navbar-inverse {
-    background: #111;
+    background: #0A3B47;
 }
 .navbar-inverse .navbar-nav>.active>a,
 .navbar-inverse .navbar-nav>.active>a:hover,
@@ -126,101 +169,13 @@ p {
     background: none;
     color: #96CDCD;
 }
-#head,
-.carousel {
+#head, .carousel {
     margin-top: 0;
 }
 #home {
     padding-top: 8em;
     padding-left: 1em;
 }
-li {}
-/*about*/
-
-.about.spacer {
-    padding-left: 4em;
-    padding-right: 4em;
-    padding-bottom: 0;
-}
-.services ul li {
-    width: 100%;
-    height: auto;
-    padding: 0;
-    border-radius: 50%;
-    margin: 0 1.25em;
-}
-.partners img {
-    float: left;
-    margin: 0 75px 30px 0;
-}
-.testimonails {
-    min-height: 195px;
-}
-.testimonails img {
-    margin-top: 5px;
-}
-.testimonails span {
-    color: #888;
-}
-.testimonails span b {
-    font-weight: 400;
-}
-.carousel-indicators li {
-    border: 1px solid #f3c024;
-}
-.carousel-indicators {
-    bottom: 0;
-}
-/*works*/
-
-#works {
-    padding-top: 6em;
-}
-#works figcaption a {
-    border: 1px solid #fff;
-    margin-top: 1em;
-    display: inline-block;
-    color: #fff;
-    padding: 0 2em;
-}
-#works figcaption a:hover {
-    text-decoration: none;
-    padding: 0 3em;
-}
-/*works*/
-
-/*team*/
-
-.team figure {
-    width: 100%;
-}
-.team img {
-    width: 100%;
-}
-.team b {
-    font-size: 1.2em;
-    display: block;
-}
-.team a i.fa {
-    color: #fff;
-    font-size: 2em;
-}
-.team a i.fa:hover {
-    color: #E89F10;
-}
-.highlight-info {
-    background: url(../images/lab.jpg) center fixed;
-    background-size: cover;
-    color: #fff;
-}
-.highlight-info .overlay {
-    background: rgba(232, 159, 16, 0.7);
-}
-.highlight-info h4 {
-    color: #fff;
-    margin: 0.5em 0 0 0;
-}
-/*about us*/
 
 .btn:hover,
 .btn:active {
@@ -232,24 +187,27 @@ li {}
 }
 /*contact*/
 
+.contact {
+    margin-top: 3em;
+}
 .contactTop {
     display: inline-block;
     float: left;
+    margin-right: -1.5em;
 }
 .contactMid {
+    padding-left: 9em;
     margin-top: 3em;
 }
 .contactBot {
+    margin-top: -1.5em;
     display: inline-block;
-    margin-top: 2em;
     float: left;
-    margin-right: 18.4em;
-    
+    margin-right: 16.8em;
 }
 
 .contactBot a {
     color: #000;
-    
 }
 
 .contactform textarea,
@@ -287,10 +245,16 @@ li {}
     box-shadow: none;
 }
 
-/*contact*/
+.item:hover img {
+    
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
 
 .footer {
-    background-color: #111;
+    background-color: #0A3B47;
     color: #fff;
     font-size: 1em;
     color: #aaa;
@@ -300,6 +264,10 @@ li {}
     margin: 0 1em;
 }
 
+.copyright a {
+    color: #fff;
+    margin: 0;
+}
 .fa:hover {
     color: #96CDCD;
 }
@@ -319,31 +287,43 @@ li {}
 .scrollToTop:hover {
     color: #96CDCD;
 }
+
 @media (max-width: 1200px) {
     body {
         font: 300 13px/13px Roboto, Arial, Helvetica;
     }
+    
+    .logo {
+    position: absolute;
+    left: 2em;
+}
+    .img-thumb{
+        max-width: 50%;
+        margin-left: -2em;
+    }
+    .contactMid {
+    padding-left: 9em;
+    margin-top: 3em;
+}
+    
+    h1.logoScherm {
+    font-size: 23px;
+    color: #fff;
+    margin-bottom: -22px;   
+}
+    
+    h1.logoScherm2 {
+        font-size: 41px;
+        margin-bottom: -2.7em;
+        color: #fff;
+}
+    
+    .contactTop {
+    margin-right: -3em;
+}
+    
     .navbar-brand {
         padding-top: 11px;
-    }
-    .services ul li {
-        margin: 0 0.5em;
-    }
-    .grid figure h2 {
-        font: 700 1.5em Roboto, Arial, Helvetica;
-    }
-    figure.effect-oscar figcaption {
-        padding: 12%;
-    }
-    figure.effect-oscar figcaption::before,
-    figure.effect-chico figcaption::before {
-        top: 20px;
-        right: 20px;
-        bottom: 20px;
-        left: 20px;
-    }
-    .partners img {
-        margin: 0 25px 25px 0;
     }
 }
 @media (max-width: 900px) {
@@ -353,38 +333,59 @@ li {}
     h4 {
         font: 300 1.3em Roboto, Arial, Helvetica;
     }
+    
+    .img-thumb{
+        max-width: 50%;
+        margin-left: -3em;
+    }
+
+    h1.logoTekst {
+        display: none;
+}
+    
+    h1.logoTekst2 {
+        margin-bottom: -2.7em;
+        padding: .1em;
+        color: #fff;
+}
+    .contactTop {
+    margin-right: -7.5em;
+}
+    
     .btn {
         padding: 1em 2em;
-    }
-    .partners img {
-        margin: 0 15px 25px 0;
-        width: 157px;
-    }
-    .services ul li {
-        width: 9em;
-        height: 9em;
-    }
-    figure.effect-chico figcaption {
-        padding: 2em;
-    }
-    figure.effect-oscar figcaption {
-        padding: 20%;
-    }
-    figure.effect-chico figcaption::before {
-        top: 10px;
-        right: 10px;
-        bottom: 10px;
-        left: 10px;
-    }
-    .grid figure.effect-chico p {
-        font-size: 0.6em;
-        line-height: 1.5em;
     }
 }
 @media (max-width: 767px) {
     body {
         font: 300 12px/12px Roboto, Arial, Helvetica;
     }
+    
+    .img-thumb{
+
+        margin-left: 1em;
+    }
+    
+    h1.logoScherm {
+        display: none;
+}
+    h1.logoScherm2 {
+        display: none;
+}
+    
+    h1.logoMobiel {
+        display: block;
+        font-size: 17px;
+        margin-left: .4em;
+        margin-bottom: -2.7em;
+        padding: .5em;
+        color: #fff;
+}
+    .contactBot {
+        margin-top: 1em;
+        margin-right: 10em;
+    }
+    
     .navbar-nav > li > a {
         line-height: 1em;
     }
@@ -397,11 +398,6 @@ li {}
     .navbar-toggle {
         margin-top: 12px;
     }
-    .carousel-caption,
-    .carousel-control,
-    .carousel-indicators {
-        display: none;
-    }
     h2.text-center {
         text-align: left;
         font-size: 1.7em;
@@ -409,38 +405,16 @@ li {}
     h4 {
         font: 300 1.2em Roboto, Arial, Helvetica;
     }
-    #partners h2 {
-        padding: 0 1em;
-    }
     #home {
         padding-top: 5em;
     }
-    .partners {
-        display: block;
-        float: left;
-    }
-    .partners img {
-        width: 120px;
-    }
-    .about.spacer {
-        padding-left: 2em;
-        padding-right: 2em;
+    
+    .top{
+        padding-top: 2em;
+        padding-bottom: -.5em;
     }
     .spacer {
         padding: 2em 0 0 0;
-    }
-    .services ul li {
-        margin-bottom: 1em;
-    }
-    .highlight-info .overlay {
-        padding-bottom: 2em;
-    }
-    .grid.team div {
-        margin: 0;
-        padding: 0;
-    }
-    figure.effect-chico figcaption {
-        padding: 1.5em;
     }
     .footer {
         margin-top: 2em;
